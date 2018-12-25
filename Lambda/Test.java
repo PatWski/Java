@@ -4,7 +4,7 @@ package Nauka.Lambda;
 public class Test {
     // operation is implemented using lambda expressions
     interface FuncInter1 {
-        int liczenie(int a, int b);
+        int operation(int a, int b);
     }
 
     // sayMessage() is implemented using lambda expressions
@@ -15,7 +15,7 @@ public class Test {
 
     // Performs FuncInter1's operation on 'a' and 'b'
     private int operate(int a, int b, FuncInter1 fobj) {
-        return fobj.liczenie(a, b);
+        return fobj.operation(a, b);
     }
 
     public static void main(String args[]) {
