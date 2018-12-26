@@ -12,5 +12,9 @@ public class TestMain {
         System.out.println(zw.e); //dostep do publicznej zmiennej klasy wewnetrznej
         // nie ma dostepu do prywatnych pol klasy wewnetrznejŁ
 
+        Zewnetrzna2 zs = new Zewnetrzna2();// utworzenie obiektu klasy zewnetrznej
+        Zewnetrzna2.WewnetrznaStatyczna zsws = new Zewnetrzna2.WewnetrznaStatyczna();//utworzenie obiektu klasy wewnetrznej statycznej
+        System.out.println(zsws.i);//odwlanie sie do publicznego wewnetrznego pola klasy wewnetrznej statycznej
+        System.out.println(Zewnetrzna2.WewnetrznaStatyczna.k);//odwolanie sie do polublicznego staycznego pola kalsy wewnetrznej statycznej
     }
 }
